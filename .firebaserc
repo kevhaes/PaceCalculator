@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "pace-calculator-9148f": {
+      "hosting": {
+        "pace-calculator": [
+          "pace-calculator-9148f"
+        ]
+      }
+    }
+  }
+}
