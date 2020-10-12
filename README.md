@@ -1,5 +1,7 @@
 # PaceCalculator
 
+A runnerss calculator to calculate distance time or pace.
+
 See it online: https://elguapobel.ga/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.4.
