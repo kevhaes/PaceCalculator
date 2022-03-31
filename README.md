@@ -1,2 +1,2 @@
 # PaceCalculator
-A pace calculator written in c#
+A pace calculator written in angular
