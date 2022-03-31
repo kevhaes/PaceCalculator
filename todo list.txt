@@ -1,0 +1,18 @@
+placeholders -> ok
+
+	clear form improve -> ok
+	placeholders clear  -> ok
+	add miles option
+	unsubscribe subscriptions
+	
+	
+	idee voor on change km or m reset the dropdown 
+ 
+ this.distanceSubscription = this.paceForm
+            .get('kilometers')
+            .valueChanges
+            .pipe(debounceTime(2000),
+         // distinctUntilChanged()
+          ).subscribe((distanceFormData) => {
+            this.paceForm.get('selectedRace').setValue('')
+          })

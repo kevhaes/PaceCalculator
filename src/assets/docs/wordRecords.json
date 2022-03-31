@@ -1,0 +1,174 @@
+{
+	"id: 0": {
+		"Eventname": "100 Metres",
+		"time": "9.58"
+	},
+	"id: 1": {
+		"Eventname": "200 Metres",
+		"time": "19.19"
+	},
+	"id: 2": {
+		"Eventname": "400 Metres",
+		"time": "43.03"
+	},
+	"id: 3": {
+		"Eventname": "800 Metres",
+		"time": "1:40.91"
+	},
+	"id: 4": {
+		"Eventname": "1000 Metres",
+		"time": "2:11.96"
+	},
+	"id: 5": {
+		"Eventname": "1500 Metres",
+		"time": "3:26.00"
+	},
+	"id: 6": {
+		"Eventname": "One Mile",
+		"time": "3:43.13"
+	},
+	"id: 7": {
+		"Eventname": "2000 Metres",
+		"time": "4:44.79"
+	},
+	"id: 8": {
+		"Eventname": "3000 Metres",
+		"time": "7:20.67"
+	},
+	"id: 9": {
+		"Eventname": "5000 Metres",
+		"time": "12:35.36"
+	},
+	"id: 10": {
+		"Eventname": "5 Kilometres",
+		"time": "12:49"
+	},
+	"id: 11": {
+		"Eventname": "10,000 Metres",
+		"time": "26:11.00"
+	},
+	"id: 12": {
+		"Eventname": "10 Kilometres",
+		"time": "26:24"
+	},
+	"id: 13": {
+		"Eventname": "One Hour",
+		"time": "21330"
+	},
+	"id: 14": {
+		"Eventname": "Half Marathon",
+		"time": "57:31"
+	},
+	"id: 15": {
+		"Eventname": "Marathon",
+		"time": "2:01:39"
+	},
+	"id: 16": {
+		"Eventname": "50 Kilometres",
+		"time": "2:42:07"
+	},
+	"id: 17": {
+		"Eventname": "50 Kilometres",
+		"time": "2:40:13"
+	},
+	"id: 18": {
+		"Eventname": "100 Kilometres",
+		"time": "6:09:14"
+	},
+	"id: 19": {
+		"Eventname": "3000 Metres Steeplechase",
+		"time": "7:53.63"
+	},
+	"id: 20": {
+		"Eventname": "110 Metres Hurdles",
+		"time": "12.80"
+	},
+	"id: 21": {
+		"Eventname": "400 Metres Hurdles",
+		"time": "45.94"
+	},
+	"id: 22": {
+		"Eventname": "High Jump",
+		"time": "2.45"
+	},
+	"id: 23": {
+		"Eventname": "Pole Vault",
+		"time": "6.18"
+	},
+	"id: 24": {
+		"Eventname": "Long Jump",
+		"time": "8.95"
+	},
+	"id: 25": {
+		"Eventname": "Triple Jump",
+		"time": "18.29"
+	},
+	"id: 26": {
+		"Eventname": "Shot Put",
+		"time": "23.37"
+	},
+	"id: 27": {
+		"Eventname": "Discus Throw",
+		"time": "74.08"
+	},
+	"id: 28": {
+		"Eventname": "Hammer Throw",
+		"time": "86.74"
+	},
+	"id: 29": {
+		"Eventname": "Javelin Throw",
+		"time": "98.48"
+	},
+	"id: 30": {
+		"Eventname": "Decathlon",
+		"time": "9126"
+	},
+	"id: 31": {
+		"Eventname": "20,000 Metres Race Walk",
+		"time": "1:17:25.6h"
+	},
+	"id: 32": {
+		"Eventname": "20 Kilometres Race Walk",
+		"time": "1:16:36"
+	},
+	"id: 33": {
+		"Eventname": "30,000 Metres Race Walk",
+		"time": "2:01:44.1h"
+	},
+	"id: 34": {
+		"Eventname": "50,000 Metres Race Walk",
+		"time": "3:35:27.2h"
+	},
+	"id: 35": {
+		"Eventname": "50 Kilometres Race Walk",
+		"time": "3:32:33"
+	},
+	"id: 36": {
+		"Eventname": "4x100 Metres Relay",
+		"time": "36.84"
+	},
+	"id: 37": {
+		"Eventname": "4x200 Metres Relay",
+		"time": "1:18.63"
+	},
+	"id: 38": {
+		"Eventname": "4x400 Metres Relay",
+		"time": "2:54.29"
+	},
+	"id: 39": {
+		"Eventname": "4x800 Metres Relay",
+		"time": "7:02.43"
+	},
+	"id: 40": {
+		"Eventname": "4x1500 Metres Relay",
+		"time": "14:22.22"
+	},
+	"id: 41": {
+		"Eventname": "Road Relay",
+		"time": "1:57:06"
+	},
+	"id: 42": {
+		"Eventname": "Distance Medley Relay",
+		"time": "9:15.50"
+	}
+}

@@ -6,10 +6,11 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from "./app-routing/app-routing.module";
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent,PaceCalculatorFormComponent],
-  imports: [BrowserModule,AppRoutingModule, FormsModule,ReactiveFormsModule,CommonModule ],
+  imports: [BrowserModule,HttpClientModule,AppRoutingModule, FormsModule,ReactiveFormsModule,CommonModule ],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -1,3 +1,39 @@
-/* html {
-  font-family: "'Raleway', sans-serif";
-} */
+
+
+html {
+  font-family: 'Raleway', sans-serif;
+  background-image: url("https://images.unsplash.com/photo-1518770503887-693a00951e1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1925&q=80");
+  background-color: gray; /* Used if the image is unavailable */
+
+
+
+}
+
+input {
+  width: 6rem;
+  height: 25px;
+  margin: 0 auto;
+  border: solid 1px #ccc;
+  border-radius: 10px;
+
+}
+select {
+  width:14rem;
+  height: 25px;
+  margin: 0 auto;
+  border: solid 1px #ccc;
+  border-radius: 10px;
+}
+.button {
+  border-radius: 10px;
+  margin-left: 0.5rem;
+  text-align: right;
+}
+::-webkit-input-placeholder {
+  text-align: center;
+}
+span {
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+}
+

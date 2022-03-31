@@ -3,7 +3,12 @@ import { CommonModule } from '@angular/common';
 import { PaceCalculatorFormComponent } from '../pace-calculator-form/pace-calculator-form.component';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [{ path: '', component: PaceCalculatorFormComponent }];
+const routes: Routes = [
+  {
+    path: '', component: PaceCalculatorFormComponent
+  }
+
+];
 
 @NgModule({
   declarations: [],

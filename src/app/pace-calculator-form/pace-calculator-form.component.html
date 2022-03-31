@@ -1,276 +1,136 @@
-<div class="custom-background">
-  <nav role="navigation">
-    <div id="menuToggle">
-      <!--
-      A fake / hidden checkbox is used as click reciever,
-      so you can use the :checked selector on it.
-      -->
-      <input type="checkbox" />
 
-      <!--
-    Some spans to act as a hamburger.
+<div class="container-fluid clearfix">
+  <div class="row">
+    <div class="col-sm-4">
 
-    They are acting like a real hamburger,
-    not that McDonalds stuff.
-    -->
-      <span></span>
-      <span></span>
-      <span></span>
-
-      <!--
-    Too bad the menu has to be inside of the button
-    but hey, it's pure CSS magic.
-    -->
-      <ul id="menu">
-        <a href="https://www.linkedin.com/in/kevinhaesendonck/"
-          ><li>How does it work?</li></a
-        >
-        <a href="https://www.linkedin.com/in/kevinhaesendonck/"
-          ><li>Contact Me</li></a
-        >
-        <a href="https://www.linkedin.com/in/kevinhaesendonck/"
-          ><li>About</li></a
-        >
-        <a href="https://www.linkedin.com/in/kevinhaesendonck/" target="_blank"
-          ><li>Other Projects</li></a
-        >
-      </ul>
     </div>
-  </nav>
-  <!-- <div class="container">
-    <h1 class="display-4">PACE CALCULATOR</h1>
-  </div> -->
-  <div id="booking" class="section">
-    <div class="section-center">
-      <div class="container">
-        <div class="row">
-          <div class="booking-form">
-            <form
-              [formGroup]="paceForm"
-              (ngSubmit)="onSubmitForm()"
-              class="my-form"
-            >
-              <div class="form-group">
-                <h4>Distance_</h4>
-                <hr />
-              </div>
-
-              <div class="row">
-                <div class="col-md-3">
-                  <div class="form-group">
-                    <span class="form-label">Km</span>
-                    <input
-                      class="form-control"
-                      type="number"
-                      id="km"
-                      formControlName="kilometers"
-                      pattern="^[0-9]\d*$"
-                      min="0"
-                      placeholder="0"
-                    />
-                  </div>
-                </div>
-
-                <div class="col-md-3">
-                  <div class="form-group">
-                    <span class="form-label">Meters</span>
-                    <input
-                      class="form-control"
-                      type="number"
-                      id="m"
-                      formControlName="meters"
-                      pattern="^\d{1,3}$"
-                      min="0"
-                      max="999"
-                      placeholder="0"
-                    />
-                  </div>
-                </div>
-                <div class="d-none d-sm-block col-md-1">
-                  <div class="form-group">
-                    <span class="form-label"></span>
-                  </div>
-                  OR
-                </div>
-
-                <div class="col-md-3">
-                  <div class="form-group">
-                    <span class="form-label"></span>
-                    <select
-                      class="form-control"
-                      id="race"
-                      formControlName="selectedRace"
-                    >
-                      <option value="" selected>Select A Race</option>
-                      <option value="5">5 km</option>
-                      <option value="10">10 km</option>
-                      <option value="21.0975">
-                        Half Marathon ( 21.0975 km )
-                      </option>
-                      <option value="10" value="42.195">
-                        Marathon (42.195 km)
-                      </option>
-                    </select>
-                    <span class="select-arrow"></span>
-                  </div>
-                </div>
-
-                <div class="col-md-2">
-                  <!-- <div class="form-group"> -->
-                  <span class="form-label"></span>
-                  <!-- <div class="form-btn"> -->
-                  <button
-                    [disabled]="!distanceButtonEnabled"
-                    (click)="calculateDistance()"
-                    class="submit-btn"
-                  >
-                    DISTANCE
-                  </button>
-                  <!-- <p class="onoffswitch">
-                      <input
-                        (change)="onTogglekmIsSelected()"
-                        type="checkbox"
-                        name="onoffswitch"
-                        class="onoffswitch-checkbox"
-                        id="myonoffswitch"
-                        tabindex="0"
-                        checked
-                      />
-                      <label class="onoffswitch-label" for="myonoffswitch">
-                        <span class="onoffswitch-inner"></span>
-                        <span class="onoffswitch-switch"></span>
-                      </label>
-                    </p> -->
-                  <!-- </div> -->
-                </div>
-                <!-- </div> -->
-              </div>
-              <!-- row1 -->
-
-              <h4>Time_</h4>
-              <hr />
-              <div class="row">
-                <div class="col-md-3">
-                  <div class="form-group">
-                    <span class="form-label">Hours</span>
-                    <input
-                      class="form-control"
-                      type="number"
-                      id="h"
-                      formControlName="hours"
-                      min="0"
-                    />
-                  </div>
-                </div>
-
-                <div class="col-md-3">
-                  <div class="form-group">
-                    <span class="form-label">Minutes</span>
-                    <input
-                      class="form-control"
-                      type="number"
-                      id="minutes"
-                      formControlName="minutes"
-                      pattern="^[1-5]?[0-9]$"
-                    />
-                  </div>
-                </div>
-
-                <div class="col-md-3">
-                  <div class="form-group">
-                    <span class="form-label">Seconds</span>
-                    <input
-                      class="form-control"
-                      type="number"
-                      id="sec"
-                      formControlName="seconds"
-                      pattern="^[1-5]?[0-9]$"
-                    />
-                  </div>
-                </div>
-
-                <div class="col-md-3">
-                  <span class="form-label"></span>
-                  <div class="btn-group">
-                    <button
-                      (click)="calculateTime()"
-                      type="button"
-                      class="btn submit-btn-splitted-left"
-                    >
-                      Time
-                    </button>
-                    <button
-                      type="button"
-                      class="btn dropdown-toggle dropdown-toggle-split submit-btn-splitted-right"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      <span class="sr-only">Toggle Dropdown</span
-                      ><span>WR</span>
-                    </button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" (click)="wrMen()"
-                        >World Record Men</a
-                      >
-                      <a class="dropdown-item" (click)="wrWomen()"
-                        >World Record Women</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- row 2 -->
-
-              <h4>Pace_</h4>
-              <hr />
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <span class="form-label">Minutes</span>
-                    <input
-                      class="form-control"
-                      type="number"
-                      id="pMin"
-                      formControlName="paceMinutes"
-                      min="0"
-                      max="59"
-                    />
-                  </div>
-                </div>
-
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <span class="form-label">Seconds</span>
-                    <input
-                      class="form-control"
-                      type="number"
-                      id="pSec"
-                      formControlName="paceSeconds"
-                      min="0"
-                      max="59"
-                    />
-                  </div>
-                </div>
-
-                <div class="col-md-4">
-                  <div class="form-btn">
-                    <button
-                      [disabled]="!paceButtonEnabled"
-                      (click)="calculatePace()"
-                      class="submit-btn"
-                    >
-                      PACE
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <!-- row3 -->
-            </form>
+    <div class="col-sm-4">
+      <div class="d-inline-flex p-4">
+        <form [formGroup]="paceForm"
+              (ngSubmit)="onSubmitForm()">
+          <div class="row pb-1">
+            <h5>distance_</h5>
           </div>
-        </div>
+
+          <div class="row">
+            <input type="number"
+                   id="km"
+                   formControlName="kilometers"
+                   placeholder="kilometers"
+                   pattern="^[0-9]\d*$"
+                   min="0" />
+            <span>km</span>
+            <input type="number"
+                   id="m"
+                   formControlName="meters"
+                   placeholder="meters"
+                   pattern="^\d{1,3}$"
+                   min="0"
+                   max="999" />
+            <span>m</span>
+            <input type="checkbox"
+                   id="toggle"
+                   formControlName="isMilesSelected"
+                   ([value])=isMilesSelected />
+            <label for="toggle">miles</label>
+
+
+            <div class="pt-1">
+              <select formControlName="selectedRace"
+                      #drpdwnSelected>
+                <option value="" disabled selected hidden>--Or pick a Race Distance--</option>
+                <option value="5">5 km</option>
+                <option value="10">10 km</option>
+                <option value="21.0975">Half Marathon ( 21.0975 km )</option>
+                <option id="marathon" value="42.195">Marathon (42.195 km)</option>
+              </select>
+
+
+
+              <button [disabled]="!distanceButtonEnabled"
+                      (click)="calculateDistance()"
+                      class="button  pr-1">
+                calculate distance
+              </button>
+            </div>
+          </div>
+
+          <div class="row pb-1 pt-1">
+            <h5>time_</h5>
+          </div>
+          <div class="row">
+    
+            <input type="number"
+                   id="h"
+                   formControlName="hours"
+                   placeholder="hours"
+                   min="0"
+                   max="99">
+            <span>:</span>
+            <input type="number"
+                   id="minutes"
+                   formControlName="minutes"
+                   placeholder="min"
+                   min="0"
+                   max="59"
+                   pattern="^[1-5]?[0-9]$" />
+            <span>:</span>
+            <input type="number"
+                   id="sec"
+                   formControlName="seconds"
+                   placeholder="seconds"
+                   min="0"
+                   max="59"
+                   pattern="^[1-5]?[0-9]$" />
+
+            <button [disabled]="!timeButtonEnabled"
+                    (click)="calculateTime()"
+                    type="button"
+                    class="button">
+              calculate time
+            </button>
+          </div>
+
+          <p *ngIf=isRaceSelected>
+            Fill in the <span>{{drpdwnSelected.value}}K</span> world record time for  <a href="#" (click)="WrTimeMenclicked()">MEN</a> or <a href="#" (click)="WrTimeWomenclicked()">WOMEN</a>
+          </p>
+          <div class="row pt-1">
+            <h5>pace_</h5>
+          </div>
+          <div class="row">
+            <input type="number"
+                   id="pMin"
+                   formControlName="paceMinutes"
+                   placeholder="minute"
+                   min="0"
+                   max="59" /><span>min</span>
+            <input type="number"
+                   id="pSec"
+                   formControlName="paceSeconds"
+                   placeholder="seconds"
+                   min="0"
+                   max="59" /> <span>sec / Km</span>
+            <button [disabled]="!paceButtonEnabled"
+                    (click)="calculatePace()"
+                    class="button">
+              calculate pace
+            </button>
+          </div>
+        
+          <div>
+
+            <a [routerLink]="" (click)="refresh()">
+              clear form
+            </a>
+          </div>
+        </form>
+
       </div>
     </div>
-  </div>
-</div>
+    <div class="col-md-4">
+
+    </div>
+      </div>
+
+    
+    </div>
